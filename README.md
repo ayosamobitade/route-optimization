@@ -69,21 +69,19 @@ venv\Scripts\activate     # Windows
 
 pip install -r app/requirements.txt
 
-Usage
-Jupyter Notebooks
+## Usage
+### Jupyter Notebooks
+- `01_data_visualization.ipynb`: Explore and visualize delivery locations on maps.
+- `02_optimize_routes.ipynb`: Run route optimization on delivery points.
+- `03_real_world_maps.ipynb`: Visualize optimized routes on real-world maps.
 
-    01_data_visualization.ipynb: Explore and visualize delivery locations on maps.
-
-    02_optimize_routes.ipynb: Run route optimization on delivery points.
-
-    03_real_world_maps.ipynb: Visualize optimized routes on real-world maps.
-
-Run Streamlit App
-
+### Run Streamlit App
+```bash
 streamlit run app/streamlit_app.py
-
+```
 Open the URL shown in your browser to interact with the route optimization app.
-Data Format
+
+## Data Format
 
     locations.csv should contain at least these columns:
 
@@ -93,19 +91,17 @@ id	address	latitude	longitude
 ...	...	...	...
 
     route_result.json is a JSON array of location IDs in the optimized visiting order, e.g.:
-
+```json
 [0, 3, 5, 2, 7, 4, 1, 6, 0]
+```
 
-Contributing
-
+## Contributing
 Contributions are welcome! Please open an issue or submit a pull request.
-License
 
+## License
 This project is licensed under the MIT License.
-Acknowledgments
 
-    Google OR-Tools for optimization algorithms.
-
-    Folium for map visualizations.
-
-    Streamlit for easy web app creation.
+## Acknowledgments
+- Google OR-Tools for optimization algorithms.
+- Folium for map visualizations.
+- Streamlit for easy web app creation.
