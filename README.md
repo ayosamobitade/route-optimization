@@ -82,15 +82,16 @@ streamlit run app/streamlit_app.py
 Open the URL shown in your browser to interact with the route optimization app.
 
 ## Data Format
+- `locations.csv` should contain at least these columns:
 
-    locations.csv should contain at least these columns:
+|id	| address | latitude | longitude |
+|----|----|-----|-----|
+| 0 | Depot Address | 6.5244 | 3.3792 |
+| 1 | Customer 1 | 6.465422 | 3.406448 |
+| ... | ... | ... | ... |
 
-id	address	latitude	longitude
-0	Depot Address	6.5244	3.3792
-1	Customer 1	6.465422	3.406448
-...	...	...	...
+- `route_result.json` is a JSON array of location IDs in the optimized visiting order, e.g.:
 
-    route_result.json is a JSON array of location IDs in the optimized visiting order, e.g.:
 ```json
 [0, 3, 5, 2, 7, 4, 1, 6, 0]
 ```
