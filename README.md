@@ -48,3 +48,14 @@ route-optimization/
 ├── .gitignore
 └── setup.py
 ```
+
+---
+
+## Installation
+
+1. Clone the repo:
+
+```bash
+git clone https://github.com/yourusername/route-optimization.git
+cd route-optimization
+```
